@@ -16,6 +16,7 @@ export default {
         path: path.resolve(__dirname, 'dist'),
         filename: 'build.[contenthash].js',
         clean: true,
+        publicPath: '/',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -93,12 +94,12 @@ export default {
         ignored: /node_modules/,
     },
     devServer: {
+        historyApiFallback: true,
         port: 9000,
-        static: './',
-        // {
-        //     directory: path.join(__dirname, 'dist'),
-        //     publicPath: '/',
-        // },
+        static:
+        {
+            directory: path.join(__dirname, 'dist'),
+        },
         liveReload: false,
         open: true,
         hot: true

@@ -46,7 +46,7 @@ const App = () => {
         <div>
             <h2>Vote for the best smiley</h2>
             <div>
-                {emojis.map((emoj) => {
+                {emojis.map((emoji) => {
                     return (
                         <div key={emoji}>
                             <span>{emoji}</span>
