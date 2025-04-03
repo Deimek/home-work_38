@@ -1,0 +1,162 @@
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/main/main_styles.scss ***!
+  \**************************************************************************************************************************/
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  padding: 20px;
+}
+
+.todo__wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.todo__title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+.todo__form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todo__input {
+  flex: 1;
+  padding: 10px;
+}
+.todo__btn {
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.todo__btn:hover {
+  background-color: #218838;
+}
+.todo__list {
+  list-style-type: none;
+  padding: 0;
+}
+.todo__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+.todo__list li span {
+  display: block;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.todo__btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.todo__btn-danger:hover {
+  background-color: #c82333;
+}
+.todo__alert {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffc107;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+}
+
+.modal__overlay {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  inset: 0;
+}
+.modal__wrapper {
+  border-radius: 15px;
+  background-color: #b2f2db;
+  padding: 15px 15px;
+  width: 470px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal__header--flex {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.modal__title {
+  color: rgb(7, 103, 26);
+  font-size: 25px;
+}
+.modal__close {
+  height: 25px;
+  width: 35px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: lightgray;
+  text-align: center;
+  cursor: pointer;
+}
+.modal__content {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  word-wrap: break-word;
+  margin: 15px;
+}
+.modal__actions {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  flex-grow: 1;
+}
+.modal__btn--cancel {
+  border-radius: 10px;
+  background-color: lightgray;
+  text-align: center;
+  cursor: pointer;
+}
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/header/style-header.scss ***!
+  \*****************************************************************************************************************************/
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.nav__header {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+}
