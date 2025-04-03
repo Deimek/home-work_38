@@ -1,0 +1,16 @@
+.dark {
+    background-color: black;
+    color: white;
+
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.nav__header {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+}
