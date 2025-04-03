@@ -4,7 +4,7 @@ import ErrorBoundery from "./errorBoundery.js";
 import Header from "./pages/header/component/header.js";
 import App from "./app.js";
 import ModeContext from "./component/mode.js";
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -14,13 +14,13 @@ const Index = () => {
 
     return (
         <React.Fragment>
-            <BrowserRouter>
+            <HashRouter>
                 <ErrorBoundery errorText='error'>
                     <ModeContext.Provider value={{ mode, setMode }}>
                         <Header />
                     </ModeContext.Provider>
                 </ErrorBoundery>
-            </BrowserRouter>
+            </HashRouter>
             <ErrorBoundery errorText='error App "Exemple"'>
                 <App />
             </ErrorBoundery>
